@@ -1,0 +1,11 @@
+//- matching users
+
+html
+	head
+		title Search result #{title}
+
+	body
+		h1 search results
+		
+		for i in users
+			p #{i.firstname}, #{i.lastname}, #{i.email}

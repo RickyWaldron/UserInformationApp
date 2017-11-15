@@ -1,0 +1,18 @@
+//- searchbar 
+
+html
+	head
+		title Searchbar #{title}
+				
+	body 
+		form.sumbitSearch(method="POST", action='/matchedUsers') 
+			p name
+				input(type="text", name="name")
+			p submit
+				input(type="submit", name ="submit", value="submit")
+
+
+
+
+//- // - route 3: takes in the post request from your form, then displays matching users on a new page. Users should be matched based 
+//- on whether either their first or last name contains the input string.

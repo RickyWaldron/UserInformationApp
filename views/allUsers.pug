@@ -1,0 +1,15 @@
+//- all users
+
+
+html
+	head
+
+	body
+		for i in users
+			p [#{i.firstname}, #{i.lastname}, #{i.email}]
+			
+		a(href='searchBar') go to search
+		br
+		br
+		a(href='addUsers') Add users
+
