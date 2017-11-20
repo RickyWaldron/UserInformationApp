@@ -15,8 +15,8 @@ app.get('/searchBar', (req, res) =>{
 })
 
 app.post('/matchedUsers', (req, res) => {
-	var name = req.body.name
-	console.log(name)
+	var name = req.body.name.toLowerCase()
+	console.log("The name", name)
 	let userMatch = []
 	fs.readFile("users.json", function(err, data) {
 		if (err) {
@@ -24,7 +24,7 @@ app.post('/matchedUsers', (req, res) => {
 		}
 		var users = JSON.parse(data.toString())
             for (var i = 0; i < users.length; i++) {
-                if ((name === users[i].firstname) || (name === users[i].lastname)) {
+                if ((name === users[i].firstname.toLowerCase()) || (name === users[i].lastname.toLowerCase())) {
                 	console.log('true')
                 	userMatch.push(users[i])
         		}
