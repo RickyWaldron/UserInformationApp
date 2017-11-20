@@ -1,0 +1,54 @@
+/*nav.css*/
+
+nav {
+	background-color:lightgreen;
+	width:100%;
+	display: inline-block;
+}
+
+p{
+	padding:10px;
+}
+h1{
+	padding: 10px;
+}
+a {
+	color:#63717f;
+	text-decoration: none;
+	
+}
+a:hover{
+	background-color: orange;
+	color: grey;
+	height: 100%;
+}
+ul.navBar{
+	margin: 0;
+	padding: 0;
+}
+	
+li.navBar {
+ 	padding: 10px 30px;
+  	display: inline-block;
+  	float:right;
+  	height: 100%
+	list-style-type: none;
+}
+
+li.shoppingList{
+	padding:10px;
+	display:block;
+	list-style-type: none;
+}
+
+li.navBar:hover{
+	background-color: orange;
+}
+
+body {
+	margin: 0;
+}
+
+form.userPassword{
+	margin-left: 10px;
+}

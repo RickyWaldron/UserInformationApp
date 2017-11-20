@@ -1,0 +1,17 @@
+//- all users
+
+
+html
+	head
+		include navBar.pug
+	body.allUsersBody
+		h1 All users
+		for i in users
+			p [#{i.firstname}, #{i.lastname}, #{i.email}]
+			
+style(type='text/css').
+	.allUsersBody {
+		text-align: center;
+		font-size: 18px;
+
+	}

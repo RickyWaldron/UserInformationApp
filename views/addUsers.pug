@@ -1,0 +1,59 @@
+//- add users
+
+html
+	head
+		include navBar.pug
+		title add users #{title}
+	body.addUserBody 
+		div(class='box')
+			div(class='containeraddUsers')
+				form.addUser(method="POST", action="/addUsers")  
+					p
+						input(class='inputAddUser', type="text", name="firstname", value = "first name")
+					p
+						input(class='inputAddUser', type="text", name="lastname", value = "last name")
+					p
+						input(class='inputAddUser', type="text", name="email", value = "email")
+					p
+						input(class='buttonAddUser', type="submit", name ="submit", value="Add user")
+
+
+style(type='text/css').
+
+	.addUserBody {
+		background: #343d46;
+	}
+	.box {
+		margin: 0 auto;
+		width: 400px;
+	}
+	.inputAddUser{
+		width: 300px;
+		height: 50px;
+		margin-top:20px;
+		background: #2b303b;
+		border: none;
+		font-size: 35px;
+		float: left;
+		color: #63717f;
+		padding-left: 45px;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+	}
+	.containeraddUsers{
+		height: 600px;
+		width: 400px;
+		vertical-align: middle;
+		white-space: nowrap;
+		position: relative;
+	}
+	.buttonAddUser{
+		width: 300px;
+		height: 50px;
+		background-color: orange;
+		font-size: 35px;
+		float: left;
+		margin-top:20px;
+		color: #343d46;
+	}	
